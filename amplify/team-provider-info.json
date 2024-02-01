@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "howardpreneurnetwork0b3f594f": {}
+      },
+      "api": {
+        "howardpreneurnetwork": {}
+      },
+      "storage": {
+        "hustorage": {}
       }
     }
   }

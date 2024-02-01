@@ -1,0 +1,16 @@
+{
+  "resourceName": "hustorage",
+  "policyUUID": "9f08c289",
+  "bucketName": "howardpreneurnetworkac918fdfec654a55b833b713884",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
