@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-howardpreneurnetwork-dev-210311-authRole",
+      "UnauthRoleArn": "arn:aws:iam::150247807464:role/amplify-howardpreneurnetwork-dev-210311-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::150247807464:role/amplify-howardpreneurnetwork-dev-210311-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-howardpreneurnetwork-dev-210311-deployment",
+      "UnauthRoleName": "amplify-howardpreneurnetwork-dev-210311-unauthRole",
+      "StackName": "amplify-howardpreneurnetwork-dev-210311",
+      "StackId": "arn:aws:cloudformation:us-east-1:150247807464:stack/amplify-howardpreneurnetwork-dev-210311/0dcee0f0-c0a6-11ee-b1e2-0ebfc8b0e10d",
+      "AmplifyAppId": "d2jeij020jxfob"
+    },
+    "categories": {
+      "auth": {
+        "howardpreneurnetwork0b3f594f": {}
+      }
+    }
+  }
+}
