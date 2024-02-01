@@ -1,6 +1,113 @@
-type Note @model @auth(rules: [ { allow: public } ] ){
+# Define the Business type
+type Business {
   id: ID!
   name: String!
-  description: String
-  image: String
+  category: String!
+  location: String!
+  description: String!
+  logo: String # Assuming a URL for the logo
+  media: [String] # Assuming an array of URLs for media content
+  owner: Entrepreneur!
+  reviews: [Review]
+}
+
+# Define the Entrepreneur type
+type Entrepreneur {
+  id: ID!
+  username: String!
+  email: String!
+  brandName: String!
+  location: String!
+  description: String!
+  logo: String # Assuming a URL for the logo
+  businesses: [Business]
+}
+
+# Define the Customer type
+type Customer {
+  id: ID!
+  username: String!
+  email: String!
+  favorites: [Business]
+}
+
+# Define the Review type
+type Review {
+  id: ID!
+  customer: Customer!
+  business: Business!
+  rating: Int!
+  comment: String
+}
+
+# Define the Appointment type
+type Appointment {
+  id: ID!
+  customer: Customer!
+  business: Business!
+  date: String!
+  time: String!
+}
+
+# Define the Statistics type
+type Statistics {
+  businessViews: Int!
+  userEngagement: Int!
+  # Add more metrics as needed
+}
+
+# Define the Query and Mutation types
+type Query {
+  businessesByCategory(category: String!): [Business]
+  searchBusinesses(query: String!): [Business]
+  customerProfile(id: ID!): Customer
+  entrepreneurProfile(id: ID!): Entrepreneur
+  # Add more queries as needed
+}
+
+type Mutation {
+  registerEntrepreneur(input: EntrepreneurInput!): Entrepreneur
+  registerCustomer(input: CustomerInput!): Customer
+  createBusiness(input: BusinessInput!): Business
+  uploadMedia(businessId: ID!, media: [Upload!]!): [String] # Assuming file uploads
+  scheduleAppointment(input: AppointmentInput!): Appointment
+  markAsFavorite(customerId: ID!, businessId: ID!): Customer
+  leaveReview(customerId: ID!, businessId: ID!, input: ReviewInput!): Review
+  # Add more mutations as needed
+}
+
+# Define input types for mutations
+input EntrepreneurInput {
+  username: String!
+  email: String!
+  password: String!
+  brandName: String!
+  location: String!
+  description: String!
+  logo: String
+}
+
+input CustomerInput {
+  username: String!
+  email: String!
+  password: String!
+}
+
+input BusinessInput {
+  name: String!
+  category: String!
+  location: String!
+  description: String!
+}
+
+input AppointmentInput {
+  customerId: ID!
+  businessId: ID!
+  date: String!
+  time: String!
+}
+
+input ReviewInput {
+  rating: Int!
+  comment: String
 }
