@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export const CompanyXPage = () => {
+export const EntrepreneurPage = () => {
   return (
     <div className="company-x-page">
       <div className="div">
