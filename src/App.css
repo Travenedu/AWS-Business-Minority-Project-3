@@ -1,38 +1,36 @@
+/* App.css */
+
+/* Body background color */
+body {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+/* Container background color */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ffffff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
-.App-link {
-  color: #61dafb;
+/* Main content area */
+.App-content {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation links */
+.nav-link {
+  text-decoration: none;
+  color: #333333; /* Dark gray */
+  padding: 10px;
 }
+
+.nav-link:hover {
+  background-color: #dddddd; /* Light gray on hover */
+  border-radius: 5px;
+}
+
+/* Add more styles as needed */

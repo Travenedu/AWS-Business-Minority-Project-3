@@ -1,0 +1,52 @@
+/* profile.css */
+
+.profile-container {
+    padding: 20px;
+}
+
+/* Styles for summary dashboard */
+.summary-dashboard {
+    margin-bottom: 20px;
+}
+
+/* Styles for tabs or sections */
+.tabs-sections {
+    margin-bottom: 20px;
+}
+
+/* Styles for interaction history */
+.interaction-history {
+    margin-bottom: 20px;
+}
+
+/* Styles for notes and comments section */
+.notes-comments {
+    margin-bottom: 20px;
+}
+
+/* Styles for customer segmentation */
+.customer-segmentation {
+    margin-bottom: 20px;
+}
+
+/* Styles for account information */
+.account-information {
+    margin-bottom: 20px;
+}
+
+/* Styles for action buttons */
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+/* Styles for search and filter options */
+.search-filter-options {
+    margin-bottom: 20px;
+}
+
+/* Styles for security and privacy controls */
+.security-privacy-controls {
+    margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
