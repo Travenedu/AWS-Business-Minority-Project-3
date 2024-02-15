@@ -1,36 +1,46 @@
-/* App.css */
+/* Profile.css */
 
-/* Body background color */
-body {
-  background-color: #f0f0f0; /* Light gray */
-}
-
-/* Container background color */
-.App {
+.profile-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff; /* White */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
-/* Main content area */
-.App-content {
-  margin-top: 20px;
-}
-
-/* Navigation links */
-.nav-link {
-  text-decoration: none;
-  color: #333333; /* Dark gray */
+.side-nav {
+  width: 200px;
+  background-color: #f0f0f0;
   padding: 10px;
 }
 
-.nav-link:hover {
-  background-color: #dddddd; /* Light gray on hover */
-  border-radius: 5px;
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Add more styles as needed */
+.side-nav li {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.side-nav li.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Styles for each tab content */
+.summary-dashboard,
+.contact-details,
+.purchase-history {
+  display: none;
+}
+
+.summary-dashboard.show,
+.contact-details.show,
+.purchase-history.show {
+  display: block;
+}
+
+

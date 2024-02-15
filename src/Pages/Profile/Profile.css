@@ -1,52 +1,72 @@
-/* profile.css */
+/* Profile.css */
 
 .profile-container {
+    display: flex;
+}
+
+.side-nav {
+    width: 200px;
+    height: 950px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.side-nav li {
+    cursor: pointer;
+    display: block;
+    padding: 8px 0;
+}
+
+.side-nav li.active {
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Styles for each tab content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.show {
+    display: block;
+}
+
+/* Styles for input fields */
+.contact-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-info input {
+    width: 25%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four squares per row */
+    gap: 20px; /* Adjust gap between squares */
+}
+
+.business-square {
+    background-color: #f0f0f0;
     padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    
 }
 
-/* Styles for summary dashboard */
-.summary-dashboard {
-    margin-bottom: 20px;
-}
-
-/* Styles for tabs or sections */
-.tabs-sections {
-    margin-bottom: 20px;
-}
-
-/* Styles for interaction history */
-.interaction-history {
-    margin-bottom: 20px;
-}
-
-/* Styles for notes and comments section */
-.notes-comments {
-    margin-bottom: 20px;
-}
-
-/* Styles for customer segmentation */
-.customer-segmentation {
-    margin-bottom: 20px;
-}
-
-/* Styles for account information */
-.account-information {
-    margin-bottom: 20px;
-}
-
-/* Styles for action buttons */
-.action-buttons {
-    margin-bottom: 20px;
-}
-
-/* Styles for search and filter options */
-.search-filter-options {
-    margin-bottom: 20px;
-}
-
-/* Styles for security and privacy controls */
-.security-privacy-controls {
-    margin-bottom: 20px;
-}
-
-/* Add more styles as needed */
