@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Profile from './Pages/Profile/Profile';
 import Authentication from './Pages/Authentication/Authentication';
+import CompanyXPage from './Pages/Entrepreneur/Entrepreneur';
 import './App.css'; // Import the CSS file
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/profile" element={<Profile />} />
             <Route path="/authentication" element={<Authentication />} />
+            <Route path="/entrepreneur" element={<CompanyXPage />} />
           </Routes>
         </main>
       </div>
