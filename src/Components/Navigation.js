@@ -11,6 +11,7 @@ function Navigation() {
         <ul>
           <li><Link to="/profile">Profile</Link></li>
           <li><Link to="/authentication">Authentication</Link></li>
+          <li><Link to="/entrepreneur">Entrepreneur</Link></li>
         </ul>
       </nav>
     );
