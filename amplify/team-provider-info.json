@@ -22,5 +22,23 @@
         "hustorage": {}
       }
     }
+  },
+  "aprilstest": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-howardpreneurnetwork-aprilstest-154357-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211848236428:role/amplify-howardpreneurnetwork-aprilstest-154357-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211848236428:role/amplify-howardpreneurnetwork-aprilstest-154357-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-howardpreneurnetwork-aprilstest-154357-deployment",
+      "UnauthRoleName": "amplify-howardpreneurnetwork-aprilstest-154357-unauthRole",
+      "StackName": "amplify-howardpreneurnetwork-aprilstest-154357",
+      "StackId": "arn:aws:cloudformation:us-east-1:211848236428:stack/amplify-howardpreneurnetwork-aprilstest-154357/1d0b5e50-cd0c-11ee-9379-0e3f6f69cc95",
+      "AmplifyAppId": "d10z6638mh1gxp"
+    },
+    "categories": {
+      "auth": {
+        "howardpreneurnetwork0b3f594f": {}
+      }
+    }
   }
 }

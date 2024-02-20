@@ -1,0 +1,1 @@
+export { TypeStar } from "./TypeStar";

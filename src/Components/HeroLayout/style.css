@@ -1,0 +1,116 @@
+.hero-layout {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 1440px;
+}
+
+.hero-layout .left {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 120px;
+  position: relative;
+  width: 720px;
+}
+
+.hero-layout .hero-message {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero-layout .message {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero-layout .eyebrow {
+  align-self: stretch;
+  font-family: var(--button-default-font-family);
+  font-size: var(--button-default-font-size);
+  font-style: var(--button-default-font-style);
+  font-weight: var(--button-default-font-weight);
+  letter-spacing: var(--button-default-letter-spacing);
+  line-height: var(--button-default-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}
+
+.hero-layout .heading {
+  align-self: stretch;
+  font-family: var(--heading-h4-font-family);
+  font-size: var(--heading-h4-font-size);
+  font-style: var(--heading-h4-font-style);
+  font-weight: var(--heading-h4-font-weight);
+  letter-spacing: var(--heading-h4-letter-spacing);
+  line-height: var(--heading-h4-line-height);
+  position: relative;
+  text-align: center;
+}
+
+.hero-layout .body {
+  align-self: stretch;
+  font-family: var(--body-body-large-font-family);
+  font-size: var(--body-body-large-font-size);
+  font-style: var(--body-body-large-font-style);
+  font-weight: var(--body-body-large-font-weight);
+  letter-spacing: var(--body-body-large-letter-spacing);
+  line-height: var(--body-body-large-line-height);
+  position: relative;
+  text-align: center;
+}
+
+.hero-layout .instance-node {
+  flex: 0 0 auto !important;
+}
+
+.hero-layout .dark {
+  background-color: #0d1a26;
+}
+
+.hero-layout .light {
+  background-color: var(--colorsbackgroundprimary);
+}
+
+.hero-layout .left.dark .eyebrow {
+  color: var(--colorsbrandprimary-20);
+}
+
+.hero-layout .left.light .eyebrow {
+  color: var(--colorsbrandprimary-60);
+}
+
+.hero-layout .left.dark .heading {
+  color: var(--colorsfontinverse);
+}
+
+.hero-layout .left.light .heading {
+  color: #0d1a26;
+}
+
+.hero-layout .left.dark .body {
+  color: var(--colorsfontinverse);
+}
+
+.hero-layout .left.light .body {
+  color: #304050;
+}

@@ -1,0 +1,1 @@
+export { TypeMoreVert } from "./TypeMoreVert";

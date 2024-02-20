@@ -1,0 +1,1 @@
+export { TypeInstagram } from "./TypeInstagram";

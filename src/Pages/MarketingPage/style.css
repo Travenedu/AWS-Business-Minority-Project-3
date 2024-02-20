@@ -1,0 +1,37 @@
+.marketing-page {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.marketing-page .nav-bar-header-2 {
+  flex: 0 0 auto !important;
+  z-index: 4 !important;
+}
+
+.marketing-page .hero-layout-1 {
+  flex: 0 0 auto !important;
+  z-index: 3 !important;
+}
+
+.marketing-page .hero-layout-instance {
+  color: var(--colorsborderfocus) !important;
+}
+
+.marketing-page .features-x {
+  flex: 0 0 auto !important;
+  z-index: 2 !important;
+}
+
+.marketing-page .CTA-section-instance {
+  flex: 0 0 auto !important;
+  z-index: 1 !important;
+}
+
+.marketing-page .marketing-footer-instance {
+  flex: 0 0 auto !important;
+  width: 1440px !important;
+  z-index: 0 !important;
+}

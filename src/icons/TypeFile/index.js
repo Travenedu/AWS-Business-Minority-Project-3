@@ -1,0 +1,1 @@
+export { TypeFile } from "./TypeFile";

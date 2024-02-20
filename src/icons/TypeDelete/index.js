@@ -1,0 +1,1 @@
+export { TypeDelete } from "./TypeDelete";

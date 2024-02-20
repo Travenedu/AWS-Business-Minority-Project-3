@@ -1,0 +1,158 @@
+.button {
+  all: unset;
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+}
+
+.button .label {
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button.large {
+  padding: 8px 16px;
+}
+
+.button.small {
+  padding: 6px 12px;
+}
+
+.button.default {
+  border: 1px solid;
+}
+
+.button.default {
+  padding: 8px 16px;
+}
+
+.button.warning {
+  border: 1px solid;
+}
+
+.button.is-disabled-true.warning {
+  background-color: var(--componentsbuttonwarningdisabledbackgroundcolor);
+  border-color: var(--componentsbuttonwarningdisabledbordercolor);
+}
+
+.button.is-disabled-false.warning {
+  background-color: var(--componentsbuttonwarningbackgroundcolor);
+  border-color: var(--componentsbuttonwarningbordercolor);
+}
+
+.button.is-disabled-false.primary {
+  background-color: var(--componentsbuttonprimarybackgroundcolor);
+  border: 1px solid;
+  border-color: var(--componentsbuttonprimarybordercolor);
+}
+
+.button.link.large {
+  gap: 10px;
+}
+
+.button.default.link {
+  gap: 10px;
+}
+
+.button.is-disabled-true.destructive {
+  background-color: var(--componentsbuttondestructivedisabledbackgroundcolor);
+}
+
+.button.is-disabled-false.destructive {
+  background-color: var(--componentsbuttondestructivebackgroundcolor);
+  border: 1px solid;
+  border-color: var(--componentsbuttondestructivebordercolor);
+}
+
+.button.is-disabled-false.default {
+  border-color: var(--componentsbuttonbordercolor);
+}
+
+.button.default.is-disabled-true {
+  border-color: var(--componentsbuttondisabledbordercolor);
+}
+
+.button.is-disabled-true.primary {
+  background-color: var(--componentsbuttonprimarydisabledbackgroundcolor);
+}
+
+.button.large .label {
+  font-family: var(--components-button-large-font-family);
+  font-size: var(--components-button-large-font-size);
+  font-style: var(--components-button-large-font-style);
+  font-weight: var(--components-button-large-font-weight);
+  letter-spacing: var(--components-button-large-letter-spacing);
+  line-height: var(--components-button-large-line-height);
+}
+
+.button.primary .label {
+  margin-top: -1px;
+}
+
+.button.small .label {
+  font-family: var(--components-button-small-font-family);
+  font-size: var(--components-button-small-font-size);
+  font-style: var(--components-button-small-font-style);
+  font-weight: var(--components-button-small-font-weight);
+  letter-spacing: var(--components-button-small-letter-spacing);
+  line-height: var(--components-button-small-line-height);
+}
+
+.button.default .label {
+  font-family: var(--components-button-default-font-family);
+  font-size: var(--components-button-default-font-size);
+  font-style: var(--components-button-default-font-style);
+  font-weight: var(--components-button-default-font-weight);
+  letter-spacing: var(--components-button-default-letter-spacing);
+  line-height: var(--components-button-default-line-height);
+}
+
+.button.destructive .label {
+  margin-top: -1px;
+}
+
+.button.is-disabled-true.warning .label {
+  color: var(--componentsbuttonwarningdisabledcolor);
+  margin-top: -1px;
+}
+
+.button.is-disabled-false.link .label {
+  color: var(--componentsbuttonlinkcolor);
+}
+
+.button.is-disabled-false.warning .label {
+  color: var(--componentsbuttonwarningcolor);
+}
+
+.button.is-disabled-false.primary .label {
+  color: var(--componentsbuttonprimarycolor);
+}
+
+.button.is-disabled-true.link .label {
+  color: var(--componentsbuttonlinkdisabledcolor);
+}
+
+.button.is-disabled-true.destructive .label {
+  color: var(--componentsbuttondestructivedisabledcolor);
+}
+
+.button.is-disabled-false.destructive .label {
+  color: var(--componentsbuttondestructivecolor);
+}
+
+.button.is-disabled-false.default .label {
+  color: var(--componentsbuttoncolor);
+}
+
+.button.default.is-disabled-true .label {
+  color: var(--componentsbuttondisabledcolor);
+  margin-top: -1px;
+}
+
+.button.is-disabled-true.primary .label {
+  color: var(--componentsbuttonprimarydisabledcolor);
+}

@@ -1,0 +1,1 @@
+export { TypeEmail } from "./TypeEmail";
