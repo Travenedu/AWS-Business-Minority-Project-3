@@ -1,0 +1,325 @@
+.text-area-field {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+}
+
+.text-area-field .label-4 {
+  align-self: stretch;
+  color: var(--componentsfieldlabelcolor);
+  margin-top: -1px;
+  position: relative;
+}
+
+.text-area-field .input-group-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.text-area-field .placeholder-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 1px solid;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.text-area-field .placeholder-2 {
+  color: var(--componentsfieldcontrolplaceholdercolor);
+  position: relative;
+}
+
+.text-area-field .div-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.text-area-field .placeholder-3 {
+  color: var(--componentsfieldcontrolplaceholdercolor);
+  margin-top: -1px;
+  position: relative;
+}
+
+.text-area-field .img {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.text-area-field.size-4-large {
+  gap: 12px;
+}
+
+.text-area-field.size-4-default {
+  gap: 8px;
+}
+
+.text-area-field.label-hidden-2-false.size-4-small {
+  gap: 4px;
+}
+
+.text-area-field.label-hidden-2-true.size-4-small {
+  gap: 8px;
+}
+
+.text-area-field.label-hidden-2-false.is-disabled-3-false.variation-1-default.size-4-large {
+  justify-content: center;
+}
+
+.text-area-field.label-hidden-2-false.size-4-default.variation-1-default.is-disabled-3-false {
+  justify-content: center;
+}
+
+.text-area-field.size-4-large .label-4 {
+  font-family: var(--components-field-large-font-family);
+  font-size: var(--components-field-large-font-size);
+  font-style: var(--components-field-large-font-style);
+  font-weight: var(--components-field-large-font-weight);
+  letter-spacing: var(--components-field-large-letter-spacing);
+  line-height: var(--components-field-large-line-height);
+}
+
+.text-area-field.size-4-default .label-4 {
+  font-family: var(--components-field-default-font-family);
+  font-size: var(--components-field-default-font-size);
+  font-style: var(--components-field-default-font-style);
+  font-weight: var(--components-field-default-font-weight);
+  letter-spacing: var(--components-field-default-letter-spacing);
+  line-height: var(--components-field-default-line-height);
+}
+
+.text-area-field.size-4-small .label-4 {
+  font-family: var(--components-field-small-font-family);
+  font-size: var(--components-field-small-font-size);
+  font-style: var(--components-field-small-font-style);
+  font-weight: var(--components-field-small-font-weight);
+  letter-spacing: var(--components-field-small-letter-spacing);
+  line-height: var(--components-field-small-line-height);
+}
+
+.text-area-field.is-disabled-3-false .placeholder-wrapper {
+  border-color: var(--componentsfieldcontrolbordercolor);
+}
+
+.text-area-field.size-4-large .placeholder-wrapper {
+  flex-direction: column;
+  padding: 8px 16px;
+}
+
+.text-area-field.label-hidden-2-true .placeholder-wrapper {
+  flex-direction: column;
+}
+
+.text-area-field.size-4-small .placeholder-wrapper {
+  flex-direction: column;
+  padding: 6px 12px;
+}
+
+.text-area-field.size-4-default .placeholder-wrapper {
+  padding: 8px 16px;
+}
+
+.text-area-field.is-disabled-3-true .placeholder-wrapper {
+  background-color: #e9ebec;
+  border-color: transparent;
+  flex-direction: column;
+}
+
+.text-area-field.size-4-default.label-hidden-2-true .placeholder-wrapper {
+  height: 106px;
+}
+
+.text-area-field.is-disabled-3-true.size-4-small .placeholder-wrapper {
+  height: 93px;
+}
+
+.text-area-field.is-disabled-3-true.size-4-large .placeholder-wrapper {
+  height: 124px;
+}
+
+.text-area-field.size-4-default.is-disabled-3-true .placeholder-wrapper {
+  height: 106px;
+}
+
+.text-area-field.label-hidden-2-true.size-4-large .placeholder-wrapper {
+  height: 124px;
+}
+
+.text-area-field.label-hidden-2-false.is-disabled-3-false .placeholder-wrapper {
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+
+.text-area-field.label-hidden-2-true.size-4-small .placeholder-wrapper {
+  height: 93px;
+}
+
+.text-area-field.label-hidden-2-false.is-disabled-3-false.size-4-large .placeholder-wrapper {
+  height: 126px;
+}
+
+.text-area-field.label-hidden-2-false.is-disabled-3-false.size-4-small .placeholder-wrapper {
+  height: 95px;
+}
+
+.text-area-field.label-hidden-2-false.size-4-default.is-disabled-3-false .placeholder-wrapper {
+  height: 108px;
+}
+
+.text-area-field.size-4-large .placeholder-2 {
+  align-self: stretch;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.text-area-field.label-hidden-2-true .placeholder-2 {
+  margin-top: -1px;
+}
+
+.text-area-field.size-4-small .placeholder-2 {
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.text-area-field.size-4-default .placeholder-2 {
+  font-family: var(--components-fieldcontrol-default-font-family);
+  font-size: var(--components-fieldcontrol-default-font-size);
+  font-style: var(--components-fieldcontrol-default-font-style);
+  font-weight: var(--components-fieldcontrol-default-font-weight);
+  letter-spacing: var(--components-fieldcontrol-default-letter-spacing);
+  line-height: var(--components-fieldcontrol-default-line-height);
+}
+
+.text-area-field.is-disabled-3-true .placeholder-2 {
+  margin-top: -1px;
+}
+
+.text-area-field.size-4-default.label-hidden-2-true .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.is-disabled-3-false.size-4-small .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.label-hidden-2-false.is-disabled-3-true .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.size-4-default.is-disabled-3-true .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.is-disabled-3-false.label-hidden-2-true .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.label-hidden-2-false.size-4-small .placeholder-2 {
+  align-self: stretch;
+}
+
+.text-area-field.label-hidden-2-true.is-disabled-3-true.size-4-small .placeholder-2 {
+  width: 276px;
+}
+
+.text-area-field.label-hidden-2-false.size-4-default.is-disabled-3-false .placeholder-2 {
+  flex: 1;
+}
+
+.text-area-field.size-4-large .div-wrapper {
+  flex-direction: column;
+  height: 124px;
+  padding: 8px 16px;
+}
+
+.text-area-field.label-hidden-2-true .div-wrapper {
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.text-area-field.size-4-small .div-wrapper {
+  flex-direction: column;
+  height: 93px;
+  padding: 6px 12px;
+}
+
+.text-area-field.size-4-default .div-wrapper {
+  height: 106px;
+  padding: 8px 16px;
+}
+
+.text-area-field.size-4-large .placeholder-3 {
+  align-self: stretch;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.text-area-field.label-hidden-2-true .placeholder-3 {
+  align-self: stretch;
+}
+
+.text-area-field.size-4-small .placeholder-3 {
+  align-self: stretch;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.text-area-field.size-4-default .placeholder-3 {
+  font-family: var(--components-fieldcontrol-default-font-family);
+  font-size: var(--components-fieldcontrol-default-font-size);
+  font-style: var(--components-fieldcontrol-default-font-style);
+  font-weight: var(--components-fieldcontrol-default-font-weight);
+  letter-spacing: var(--components-fieldcontrol-default-letter-spacing);
+  line-height: var(--components-fieldcontrol-default-line-height);
+}
+
+.text-area-field.label-hidden-2-false.size-4-default .placeholder-3 {
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-area-field.size-4-small .img {
+  align-self: stretch;
+  width: 100%;
+}
+
+.text-area-field.size-4-default .img {
+  width: 300px;
+}
+
+.text-area-field.label-hidden-2-false.size-4-large .img {
+  width: 300px;
+}
+
+.text-area-field.label-hidden-2-true.size-4-large .img {
+  align-self: stretch;
+  width: 100%;
+}

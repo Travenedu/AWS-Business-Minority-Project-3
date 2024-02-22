@@ -1,0 +1,1 @@
+export { TypeAlert } from "./TypeAlert";

@@ -1,0 +1,1 @@
+export { LogoWithText } from "./LogoWithText";

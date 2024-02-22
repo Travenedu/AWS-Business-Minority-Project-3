@@ -1,0 +1,62 @@
+.nav-bar-header {
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: var(--shadows-medium);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  position: relative;
+  width: 1440px;
+}
+
+.nav-bar-header .frame {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-bar-header .amplify-mark {
+  height: 30px;
+  position: relative;
+  width: 34.55px;
+}
+
+.nav-bar-header .text-wrapper {
+  color: #0d1a26;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.nav-bar-header .div {
+  color: #0d1a26;
+  font-family: var(--medium-font-family);
+  font-size: var(--medium-font-size);
+  font-style: var(--medium-font-style);
+  font-weight: var(--medium-font-weight);
+  letter-spacing: var(--medium-letter-spacing);
+  line-height: var(--medium-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.nav-bar-header .actions {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.nav-bar-header .button-instance {
+  flex: 0 0 auto !important;
+}

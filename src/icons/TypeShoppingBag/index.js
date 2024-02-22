@@ -1,0 +1,1 @@
+export { TypeShoppingBag } from "./TypeShoppingBag";

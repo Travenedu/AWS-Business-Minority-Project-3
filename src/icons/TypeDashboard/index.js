@@ -1,0 +1,1 @@
+export { TypeDashboard } from "./TypeDashboard";

@@ -1,0 +1,80 @@
+.CTA-section {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 160px;
+  position: relative;
+  width: 1440px;
+}
+
+.CTA-section .type-lock-up {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.CTA-section .frame-6 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.CTA-section .text-wrapper-3 {
+  color: var(--colorsbrandsecondary-60);
+  font-family: var(--button-default-font-family);
+  font-size: var(--button-default-font-size);
+  font-style: var(--button-default-font-style);
+  font-weight: var(--button-default-font-weight);
+  letter-spacing: var(--button-default-letter-spacing);
+  line-height: var(--button-default-line-height);
+  margin-top: -1px;
+  position: relative;
+  width: 1120px;
+}
+
+.CTA-section .text-wrapper-4 {
+  color: #0d1a26;
+  font-family: var(--heading-h4-font-family);
+  font-size: var(--heading-h4-font-size);
+  font-style: var(--heading-h4-font-style);
+  font-weight: var(--heading-h4-font-weight);
+  letter-spacing: var(--heading-h4-letter-spacing);
+  line-height: var(--heading-h4-line-height);
+  position: relative;
+  width: 1120px;
+}
+
+.CTA-section .text-wrapper-5 {
+  color: #304050;
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: relative;
+  width: 1120px;
+}
+
+.CTA-section .form {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.CTA-section .design-component-instance-node {
+  flex: 0 0 auto !important;
+}

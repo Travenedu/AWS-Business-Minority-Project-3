@@ -1,0 +1,1 @@
+export { TypeStorage } from "./TypeStorage";

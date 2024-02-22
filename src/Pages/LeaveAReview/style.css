@@ -1,0 +1,133 @@
+.leave-a-review {
+  align-items: flex-start;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.leave-a-review .nav-bar-header-2 {
+  flex: 0 0 auto !important;
+  z-index: 2 !important;
+}
+
+.leave-a-review .nav-bar-header-instance {
+  margin-top: -1px !important;
+}
+
+.leave-a-review .frame-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--colorsbackgroundsecondary);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 48px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.leave-a-review .heading-instance {
+  flex: 0 0 auto !important;
+}
+
+.leave-a-review .p {
+  color: var(--colorsfonttertiary);
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.leave-a-review .frame-6 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 48px;
+  padding: 48px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.leave-a-review .frame-7 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 48px;
+  position: relative;
+}
+
+.leave-a-review .frame-8 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+  width: 416px;
+}
+
+.leave-a-review .my-icon-2 {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.leave-a-review .text-wrapper-3 {
+  color: #0d1a26;
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.leave-a-review .huentrepenuer-gmail {
+  display: block;
+  flex: 0 0 auto;
+  margin-left: -3898px;
+  margin-top: -5380px;
+  position: relative;
+}
+
+.leave-a-review .text-wrapper-4 {
+  color: var(--colorsfontinteractive);
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.leave-a-review .element-main-street {
+  color: var(--colorsfonttertiary);
+  font-family: "Inter", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+  width: fit-content;
+}
+
+.leave-a-review .contact-us-instance {
+  flex: 1 !important;
+  flex-grow: 1 !important;
+}

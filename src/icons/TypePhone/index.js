@@ -1,0 +1,1 @@
+export { TypePhone } from "./TypePhone";

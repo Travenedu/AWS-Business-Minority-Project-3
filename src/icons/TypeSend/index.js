@@ -1,0 +1,1 @@
+export { TypeSend } from "./TypeSend";

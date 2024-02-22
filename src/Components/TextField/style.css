@@ -1,0 +1,193 @@
+.text-field {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+}
+
+.text-field .label-2 {
+  align-self: stretch;
+  color: var(--componentsfieldlabelcolor);
+  margin-top: -1px;
+  position: relative;
+}
+
+.text-field .input-group {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.text-field .input {
+  align-self: stretch;
+  background: none;
+  border: 1px solid;
+  border-radius: 4px;
+  color: var(--componentsfieldcontrolplaceholdercolor);
+  padding: 0;
+  position: relative;
+}
+
+.text-field .placeholder {
+  align-self: stretch;
+  background: none;
+  border: none;
+  color: var(--componentsfieldcontrolplaceholdercolor);
+  margin-top: -1px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.text-field .border {
+  align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.text-field.size-0-large {
+  gap: 12px;
+}
+
+.text-field.size-0-default {
+  gap: 8px;
+}
+
+.text-field.label-hidden-false.size-0-small {
+  gap: 4px;
+}
+
+.text-field.label-hidden-true.size-0-small {
+  gap: 8px;
+}
+
+.text-field.label-hidden-false.is-disabled-1-false.variation-0-default.size-0-large {
+  justify-content: center;
+}
+
+.text-field.label-hidden-false.size-0-default.variation-0-default.is-disabled-1-false {
+  justify-content: center;
+}
+
+.text-field.size-0-large .label-2 {
+  font-family: var(--components-field-large-font-family);
+  font-size: var(--components-field-large-font-size);
+  font-style: var(--components-field-large-font-style);
+  font-weight: var(--components-field-large-font-weight);
+  letter-spacing: var(--components-field-large-letter-spacing);
+  line-height: var(--components-field-large-line-height);
+}
+
+.text-field.size-0-default .label-2 {
+  font-family: var(--components-field-default-font-family);
+  font-size: var(--components-field-default-font-size);
+  font-style: var(--components-field-default-font-style);
+  font-weight: var(--components-field-default-font-weight);
+  letter-spacing: var(--components-field-default-letter-spacing);
+  line-height: var(--components-field-default-line-height);
+}
+
+.text-field.size-0-small .label-2 {
+  font-family: var(--components-field-small-font-family);
+  font-size: var(--components-field-small-font-size);
+  font-style: var(--components-field-small-font-style);
+  font-weight: var(--components-field-small-font-weight);
+  letter-spacing: var(--components-field-small-letter-spacing);
+  line-height: var(--components-field-small-line-height);
+}
+
+.text-field.is-disabled-1-false .input {
+  border-color: var(--componentsfieldcontrolbordercolor);
+}
+
+.text-field.size-0-large .input {
+  font-family: var(--components-fieldcontrol-large-font-family);
+  font-size: var(--components-fieldcontrol-large-font-size);
+  font-style: var(--components-fieldcontrol-large-font-style);
+  font-weight: var(--components-fieldcontrol-large-font-weight);
+  letter-spacing: var(--components-fieldcontrol-large-letter-spacing);
+  line-height: var(--components-fieldcontrol-large-line-height);
+  width: 100%;
+}
+
+.text-field.label-hidden-true .input {
+  margin-top: -1px;
+}
+
+.text-field.size-0-small .input {
+  font-family: var(--components-fieldcontrol-small-font-family);
+  font-size: var(--components-fieldcontrol-small-font-size);
+  font-style: var(--components-fieldcontrol-small-font-style);
+  font-weight: var(--components-fieldcontrol-small-font-weight);
+  letter-spacing: var(--components-fieldcontrol-small-letter-spacing);
+  line-height: var(--components-fieldcontrol-small-line-height);
+  width: 100%;
+}
+
+.text-field.size-0-default .input {
+  font-family: var(--components-fieldcontrol-default-font-family);
+  font-size: var(--components-fieldcontrol-default-font-size);
+  font-style: var(--components-fieldcontrol-default-font-style);
+  font-weight: var(--components-fieldcontrol-default-font-weight);
+  letter-spacing: var(--components-fieldcontrol-default-letter-spacing);
+  line-height: var(--components-fieldcontrol-default-line-height);
+}
+
+.text-field.is-disabled-1-true .input {
+  background-color: #e9ebec;
+  border-color: transparent;
+  margin-top: -1px;
+  width: 100%;
+}
+
+.text-field.label-hidden-false .input {
+  width: 100%;
+}
+
+.text-field.label-hidden-false.is-disabled-1-false .input {
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.text-field.size-0-default.label-hidden-true.is-disabled-1-false .input {
+  width: 300px;
+}
+
+.text-field.size-0-large .placeholder {
+  font-family: var(--components-fieldcontrol-large-font-family);
+  font-size: var(--components-fieldcontrol-large-font-size);
+  font-style: var(--components-fieldcontrol-large-font-style);
+  font-weight: var(--components-fieldcontrol-large-font-weight);
+  letter-spacing: var(--components-fieldcontrol-large-letter-spacing);
+  line-height: var(--components-fieldcontrol-large-line-height);
+}
+
+.text-field.label-hidden-true .placeholder {
+  border-radius: 4px;
+}
+
+.text-field.size-0-small .placeholder {
+  font-family: var(--components-fieldcontrol-small-font-family);
+  font-size: var(--components-fieldcontrol-small-font-size);
+  font-style: var(--components-fieldcontrol-small-font-style);
+  font-weight: var(--components-fieldcontrol-small-font-weight);
+  letter-spacing: var(--components-fieldcontrol-small-letter-spacing);
+  line-height: var(--components-fieldcontrol-small-line-height);
+}
+
+.text-field.size-0-default .placeholder {
+  font-family: var(--components-fieldcontrol-default-font-family);
+  font-size: var(--components-fieldcontrol-default-font-size);
+  font-style: var(--components-fieldcontrol-default-font-style);
+  font-weight: var(--components-fieldcontrol-default-font-weight);
+  letter-spacing: var(--components-fieldcontrol-default-letter-spacing);
+  line-height: var(--components-fieldcontrol-default-line-height);
+}

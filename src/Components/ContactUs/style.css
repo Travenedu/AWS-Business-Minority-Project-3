@@ -1,0 +1,82 @@
+.contact-us {
+  align-items: flex-start;
+  background-color: var(--colorsbackgroundsecondary);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  position: relative;
+}
+
+.contact-us .frame-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.contact-us .text-field-instance {
+  flex: 1 !important;
+  flex-grow: 1 !important;
+  width: unset !important;
+}
+
+.contact-us .design-component-instance-node {
+  align-self: stretch !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+}
+
+.contact-us .checkbox-field-instance {
+  flex: 0 0 auto !important;
+}
+
+.contact-us .button-2 {
+  align-self: stretch !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  width: 100% !important;
+}
+
+.contact-us .frame-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.contact-us .frame-4 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.contact-us .text-wrapper-2 {
+  color: var(--colorsfonttertiary);
+  font-family: var(--body-body-small-font-family);
+  font-size: var(--body-body-small-font-size);
+  font-style: var(--body-body-small-font-style);
+  font-weight: var(--body-body-small-font-weight);
+  letter-spacing: var(--body-body-small-letter-spacing);
+  line-height: var(--body-body-small-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact-us .icon-instance-node {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}

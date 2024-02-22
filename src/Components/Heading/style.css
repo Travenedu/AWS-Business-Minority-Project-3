@@ -1,0 +1,91 @@
+.heading {
+  display: inline-flex;
+  position: relative;
+}
+
+.heading .label-2 {
+  color: var(--colorsfontprimary);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.heading.one {
+  align-items: center;
+  justify-content: center;
+}
+
+.heading.six {
+  align-items: flex-start;
+}
+
+.heading.five {
+  align-items: flex-start;
+}
+
+.heading.two {
+  align-items: flex-start;
+}
+
+.heading.four {
+  align-items: flex-start;
+}
+
+.heading.three {
+  align-items: flex-start;
+}
+
+.heading.one .label-2 {
+  font-family: var(--components-heading-1-font-family);
+  font-size: var(--components-heading-1-font-size);
+  font-style: var(--components-heading-1-font-style);
+  font-weight: var(--components-heading-1-font-weight);
+  letter-spacing: var(--components-heading-1-letter-spacing);
+  line-height: var(--components-heading-1-line-height);
+}
+
+.heading.six .label-2 {
+  font-family: var(--components-heading-6-font-family);
+  font-size: var(--components-heading-6-font-size);
+  font-style: var(--components-heading-6-font-style);
+  font-weight: var(--components-heading-6-font-weight);
+  letter-spacing: var(--components-heading-6-letter-spacing);
+  line-height: var(--components-heading-6-line-height);
+}
+
+.heading.five .label-2 {
+  font-family: var(--components-heading-5-font-family);
+  font-size: var(--components-heading-5-font-size);
+  font-style: var(--components-heading-5-font-style);
+  font-weight: var(--components-heading-5-font-weight);
+  letter-spacing: var(--components-heading-5-letter-spacing);
+  line-height: var(--components-heading-5-line-height);
+}
+
+.heading.two .label-2 {
+  font-family: var(--components-heading-2-font-family);
+  font-size: var(--components-heading-2-font-size);
+  font-style: var(--components-heading-2-font-style);
+  font-weight: var(--components-heading-2-font-weight);
+  letter-spacing: var(--components-heading-2-letter-spacing);
+  line-height: var(--components-heading-2-line-height);
+}
+
+.heading.four .label-2 {
+  font-family: var(--components-heading-4-font-family);
+  font-size: var(--components-heading-4-font-size);
+  font-style: var(--components-heading-4-font-style);
+  font-weight: var(--components-heading-4-font-weight);
+  letter-spacing: var(--components-heading-4-letter-spacing);
+  line-height: var(--components-heading-4-line-height);
+}
+
+.heading.three .label-2 {
+  font-family: var(--components-heading-3-font-family);
+  font-size: var(--components-heading-3-font-size);
+  font-style: var(--components-heading-3-font-style);
+  font-weight: var(--components-heading-3-font-weight);
+  letter-spacing: var(--components-heading-3-letter-spacing);
+  line-height: var(--components-heading-3-line-height);
+}

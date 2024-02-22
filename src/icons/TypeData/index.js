@@ -1,0 +1,1 @@
+export { TypeData } from "./TypeData";

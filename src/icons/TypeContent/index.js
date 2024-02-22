@@ -1,0 +1,1 @@
+export { TypeContent } from "./TypeContent";
