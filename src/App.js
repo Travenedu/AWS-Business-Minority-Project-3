@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navigation from './components/Navigation';
+import Navigation from './Components/Navigation';
 import Profile from './Pages/Profile/Profile';
 import Authentication from './Pages/Authentication/Authentication';
 import CompanyXPage from './Pages/Entrepreneur/Entrepreneur';

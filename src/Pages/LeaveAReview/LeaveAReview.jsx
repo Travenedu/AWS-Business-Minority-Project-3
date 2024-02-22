@@ -1,8 +1,8 @@
 import React from "react";
-import { ContactUs } from "../../components/ContactUs";
-import { Heading } from "../../components/Heading";
-import { MyIcon } from "../../components/MyIcon";
-import { NavBarHeader } from "../../components/NavBarHeader";
+import { ContactUs } from "../../Components/ContactUs";
+import { Heading } from "../../Components/Heading";
+import { MyIcon } from "../../Components/MyIcon";
+import { NavBarHeader } from "../../Components/NavBarHeader";
 import { Myicon1 } from "../../icons/Myicon1";
 import { Myicon2 } from "../../icons/Myicon2";
 import { TypeEmail } from "../../icons/TypeEmail";
