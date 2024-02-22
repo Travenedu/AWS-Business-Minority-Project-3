@@ -1,9 +1,9 @@
 import React from "react";
-import { CtaSection } from "../../components/CtaSection";
-import { Features } from "../../components/Features";
-import { HeroLayout } from "../../components/HeroLayout";
-import { MarketingFooter } from "../../components/MarketingFooter";
-import { NavBarHeader } from "../../components/NavBarHeader";
+import { CtaSection } from "../../Components/CtaSection";
+import { Features } from "../../Components/Features";
+import { HeroLayout } from "../../Components/HeroLayout";
+import { MarketingFooter } from "../../Components/MarketingFooter";
+import { NavBarHeader } from "../../Components/NavBarHeader";
 import "./style.css";
 
 export const MarketingPage = () => {
