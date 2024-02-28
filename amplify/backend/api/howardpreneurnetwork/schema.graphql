@@ -1,3 +1,29 @@
+#TYPES
+type Profile {
+  id: ID!
+  user: User!
+  # Add fields specific to both customer and business owner profiles here
+}
+
+type CustomerProfile {
+  id: ID!
+  profile: Profile!
+  # Add fields specific to customer profile here
+}
+
+type BusinessOwnerProfile {
+  id: ID!
+  profile: Profile!
+  # Add fields specific to business owner profile here
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  profileImage: String
+}
+
 type Business {
   id: ID!
   name: String!
@@ -19,18 +45,28 @@ type Appointment {
   time: String!
 }
 
+# Authentification
+type Note @model @auth(rules: [ { allow: public } ] ){
+  id: ID!
+  name: String!
+  description: String
+  image: String
+}
+
 type Query {
   business(id: ID!): Business
   businesses(category: String, sortBy: SortBy): [Business!]!
+  customer(id: ID!): User
+  customers: [User!]!
+  entrepreneur(id: ID!): User
+  entrepreneurs: [User!]!
 }
 
-enum SortBy {
-  NAME_ASC
-  NAME_DESC
-  PRICE_ASC
-  PRICE_DESC
+type Subscription {
+  appointmentScheduled(customerId: ID!): Appointment
 }
 
+# MUTATIONS
 type Mutation {
   createBusiness(
     name: String!
@@ -41,59 +77,6 @@ type Mutation {
   ): Business!
 
   createAppointment(
-    businessId: ID!
-    clientName: String!
-    clientEmail: String!
-    date: String!
-    time: String!
-  ): Appointment!
-}
-
-type Customer {
-  id: ID!
-  name: String!
-  email: String!
-  profileImage: String
-  savedBusinesses: [Business!]!
-  appointments: [Appointment!]!
-}
-
-type Query {
-  customer(id: ID!): Customer
-  customers: [Customer!]!
-}
-
-query {
-  businesses(category: "Restaurant", sortBy: PRICE_ASC) {
-    id
-    name
-    description
-    address
-    phone
-    website
-    category
-    price
-  }
-}
-
-type Mutation {
-  createCustomer(
-    name: String!
-    email: String!
-    password: String!
-    profileImage: String
-  ): Customer!
-
-  updateCustomerProfile(
-    id: ID!
-    name: String
-    email: String
-    profileImage: String
-  ): Customer!
-
-  saveBusiness(customerId: ID!, businessId: ID!): Boolean
-
-  createAppointment(
     customerId: ID!
     businessId: ID!
     clientName: String!
@@ -101,30 +84,53 @@ type Mutation {
     date: String!
     time: String!
   ): Appointment!
-}
 
-type Entrepreneur {
-  id: ID!
-  name: String!
-  email: String!
-  profileImage: String
-  businesses: [Business!]!
-}
+  createCustomer(
+    name: String!
+    email: String!
+    password: String!
+    profileImage: String
+  ): User!
 
-type Query {
-  entrepreneur(id: ID!): Entrepreneur
-  entrepreneurs: [Entrepreneur!]!
-}
+  updateCustomerProfile(
+    id: ID!
+    name: String
+    email: String
+    profileImage: String
+  ): User!
 
-type Mutation {
+  saveBusiness(customerId: ID!, businessId: ID!): Boolean
+
   createEntrepreneur(
     name: String!
     email: String!
     password: String!
     profileImage: String
-  ): Entrepreneur!
+  ): User!
 }
 
-type Subscription {
-  appointmentScheduled(customerId: ID!): Appointment
+# QUERIES
+query ProfileData {
+  customers {
+    id
+    name
+    email
+    profileImage
+    # Add any other fields specific to the customer profile here
+  }
+  entrepreneurs {
+    id
+    name
+    email
+    profileImage
+    # Add any other fields specific to the business owner profile here
+  }
+}
+
+#ENUM
+enum SortBy {
+  NAME_ASC
+  NAME_DESC
+  PRICE_ASC
+  PRICE_DESC
 }
