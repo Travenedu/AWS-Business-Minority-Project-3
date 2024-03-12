@@ -1,17 +1,24 @@
 // Profile.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // Import useEffect from 'react'
 import './Profile.css'; // Import the CSS file for styling
+import { generateClient } from 'aws-amplify/api';
+
+const client = generateClient();
 
 const Profile = () => {
     // State variables for managing active tab and user information
     const [activeTab, setActiveTab] = useState('summary');
     const [userInfo, setUserInfo] = useState({
-        username: 'exampleuser',
+        username:   'exampleuser',
         password: 'examplepassword',
         email: 'example@example.com',
         // Add more fields as needed
     });
+
+    useEffect(() => {
+        fetchProfile();
+    }, []);
 
     // Function to handle tab change
     const handleTabChange = (tabName) => {
@@ -20,11 +27,30 @@ const Profile = () => {
 
     // Function to handle user information changes
     const handleUserInfoChange = (fieldName, value) => {
-        setUserInfo(prevState => ({
-            ...prevState,
-            [fieldName]: value
-        }));
+        try {
+            setUserInfo(prevState => ({
+                ...prevState,
+                [fieldName]: value
+            }));
+    } catch (error) {
+        console.error("Error changing user info", error);
+    }
+
     };
+
+    // Function to retrieve profile information
+    async function fetchProfile() {
+
+        // Define or import 'client' and 'profileData'
+        // const apiData = await client.graphql({ query: profileData }); // Assuming profileData is the updated GraphQL query
+        // const customers = apiData.data.customers; // Assuming 'customers' is the field containing customer profiles
+        // const entrepreneurs = apiData.data.entrepreneurs; // Assuming 'entrepreneurs' is the field containing entrepreneur profiles
+        // setUserInfo({ customers, entrepreneurs });
+        const something = 5;
+  
+    }
+
+    // Function to reset password
 
     return (
         <div className="profile-container">
@@ -84,6 +110,7 @@ const Profile = () => {
                 {/* Add more tab content sections here */}
             </div>
         </div>
+
     );
 }
 
