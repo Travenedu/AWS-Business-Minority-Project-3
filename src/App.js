@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './Components/Navigation';
 import Profile from './Pages/Profile/Profile';
 import Authentication from './Pages/Authentication/Authentication';
-import CompanyXPage from './Pages/Entrepreneur/Entrepreneur';
+import { CompanyXPage } from './Pages/Entrepreneur/Entrepreneur';
 import { LeaveAReview } from './Pages/LeaveAReview/LeaveAReview';
 import { MarketingPage } from './Pages/MarketingPage';
 import './App.css'; // Import the CSS file
