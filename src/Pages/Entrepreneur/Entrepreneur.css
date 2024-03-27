@@ -23,7 +23,7 @@
     width: 1280px;
   }
   
-  .company-x-page .text-wrapper {
+  .company-x-page .company-name {
     color: #000000;
     font-family: "Roboto-SemiBold", Helvetica;
     font-size: 24px;
@@ -150,33 +150,77 @@
     top: 444px;
     width: 225px;
   }
-  
-  .company-x-page .overlap-group {
+
+  .company-x-page .add-media-button {
     background-color: #d9d9d9;
-    border-radius: 40px;
-    height: 37px;
-    left: 1077px;
-    position: absolute;
-    top: 365px;
-    width: 186px;
-  }
-  
-  .company-x-page .text-wrapper-2 {
-    color: #000000;
-    font-family: "Roboto-SemiBold", Helvetica;
+    font-family: "Open Sans-SemiBold", Helvetica;
     font-size: 14px;
     font-weight: 600;
-    height: 20px;
-    left: 17px;
-    letter-spacing: 0;
-    line-height: normal;
+    border-radius: 40px;
+    height: 35px;
+    left: 40px;
     position: absolute;
-    text-align: center;
-    top: 7px;
-    width: 152px;
+    top: 365px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .add-media-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-media-form h2 {
+    margin-bottom: 20px;
+}
+
+.add-media-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-media-form button {
+    background-color: #d9d9d9;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    height: 35px;
+    width: 140px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-media-form button:hover {
+    background-color: #d9d9d9;
+}
+
+  
+  .company-x-page .reviews {
+    background-color: #d9d9d9;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 35px;
+    left: 1080px;
+    position: absolute;
+    top: 365px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .company-x-page .overlap-group-2 {
+    font-family: "Open Sans-SemiBold", Helvetica;
     background-color: #848383;
     height: 105px;
     left: 0;
@@ -186,23 +230,33 @@
   }
   
   .company-x-page .log-in {
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
     background-color: #ffffff;
-    border-radius: 10px;
-    height: 21px;
-    left: 1102px;
+    border-radius: 40px;
+    height: 35px;
+    left: 1000px;
     position: absolute;
     top: 53px;
-    width: 47px;
+    width: 80px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .company-x-page .sign-up {
+    font-family: "Open Sans-SemiBold", Helvetica;
     background-color: #ffffff;
-    border-radius: 10px;
-    height: 21px;
-    left: 1187px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 35px;
+    left: 1140px;
     position: absolute;
     top: 53px;
-    width: 47px;
+    width: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .company-x-page .logo {
@@ -231,21 +285,6 @@
     width: 137px;
   }
   
-  .company-x-page .text-wrapper-3 {
-    color: #000000;
-    font-family: "Open Sans-SemiBold", Helvetica;
-    font-size: 14px;
-    font-weight: 600;
-    height: 28px;
-    left: 39px;
-    letter-spacing: 0;
-    line-height: 28px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    white-space: nowrap;
-  }
-  
   .company-x-page .overlap-3 {
     height: 28px;
     left: 256px;
@@ -254,19 +293,34 @@
     width: 137px;
   }
   
-  .company-x-page .text-wrapper-4 {
-    color: #000000;
+  .company-x-page .explore-button {
     font-family: "Open Sans-SemiBold", Helvetica;
+    background-color: #ffffff;
     font-size: 14px;
     font-weight: 600;
-    height: 28px;
-    left: 36px;
-    letter-spacing: 0;
-    line-height: 28px;
+    border-radius: 40px;
+    height: 35px;
+    left: 40px;
     position: absolute;
-    text-align: center;
-    top: 0;
-    white-space: nowrap;
+    top: 53px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .company-x-page .categories-button {
+    font-family: "Open Sans-SemiBold", Helvetica;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 35px;
+    left: 240px;
+    position: absolute;
+    top: 53px;
+    width: 140px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .company-x-page .overlap-4 {
