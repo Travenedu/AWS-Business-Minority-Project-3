@@ -1,130 +1,124 @@
-type Business {
+# TYPES
+type Profile {
+  id: ID!
+  first_name: String!
+  last_name: String!
+  email: String!
+  birthday: Int
+  gender: String!
+  business_owner: Boolean!
+}
+
+type CustomerProfile {
+  id: ID!
+  profile: Profile!
+  appointments: [Appointment]
+}
+
+type BusinessOwnerProfile {
+  id: ID!
+  profile: Profile!
+  business: Business!
+  appointments: [Appointment]
+}
+
+type Business @model{
   id: ID!
   name: String!
-  description: String
-  address: String!
   phone: String!
-  website: String
+  email: String!
+  address: String!
+  website: String!
   category: String!
-  price: Float!
-  appointments: [Appointment!]!
+  description: String!
+  businessImagePath: String!
+  appointments: [Appointment]
+  
 }
 
 type Appointment {
-  id: ID!
-  business: Business!
+  appointmentId: ID!
+
+  businessName: String!
+  businessId: ID!
+  businessNumber: String!
+
   clientName: String!
+  clientId: ID!
+  clientNumber: String!
   clientEmail: String!
+
   date: String!
   time: String!
 }
 
-type Query {
-  business(id: ID!): Business
-  businesses(category: String, sortBy: SortBy): [Business!]!
-}
-
-enum SortBy {
-  NAME_ASC
-  NAME_DESC
-  PRICE_ASC
-  PRICE_DESC
-}
-
-type Mutation {
-  createBusiness(
-    name: String!
-    description: String
-    address: String!
-    phone: String!
-    website: String
-  ): Business!
-
-  createAppointment(
-    businessId: ID!
-    clientName: String!
-    clientEmail: String!
-    date: String!
-    time: String!
-  ): Appointment!
-}
-
-type Customer {
+# Authentification
+type Note @model @auth(rules: [{ allow: public }]) {
   id: ID!
   name: String!
-  email: String!
-  profileImage: String
-  savedBusinesses: [Business!]!
-  appointments: [Appointment!]!
+  description: String
+  image: String
 }
 
-type Query {
-  customer(id: ID!): Customer
-  customers: [Customer!]!
-}
+# # INPUTS
+# input profileInput {
+#   first_name: String!
+#   last_name: String!
+#   email: String!
+#   birthday: Int
+#   business_owner: Boolean!
+# }
 
-query {
-  businesses(category: "Restaurant", sortBy: PRICE_ASC) {
-    id
-    name
-    description
-    address
-    phone
-    website
-    category
-    price
-  }
-}
+# # QUERIES
+# type Query {
+#   profiles: [Profile]
+#   userProfile(id: ID!): Profile
+#   userCustomerProfile(id: ID): CustomerProfile
+#   userBusinessOwnerProfile(id: ID): BusinessOwnerProfile
 
-type Mutation {
-  createCustomer(
-    name: String!
-    email: String!
-    password: String!
-    profileImage: String
-  ): Customer!
+# }
 
-  updateCustomerProfile(
-    id: ID!
-    name: String
-    email: String
-    profileImage: String
-  ): Customer!
+# MUTATIONS
+# type Mutation {
+#   createProfile(
+#     first_name: String!
+#     last_name: String!
+#     email: String!
+#     birthday: Int
+#     gender: String!
+#     business_owner: Boolean!
+#   ): Profile
 
-  saveBusiness(customerId: ID!, businessId: ID!): Boolean
+#   # createBusiness(
+#   #   name: String!
+#   #   phone: String!
+#   #   appointments: [Appointment]
+#   #   business_type: String
+#   # ): Business
 
-  createAppointment(
-    customerId: ID!
-    businessId: ID!
-    clientName: String!
-    clientEmail: String!
-    date: String!
-    time: String!
-  ): Appointment!
-}
+#   createAppointment(
+#   appointmentId: ID!
 
-type Entrepreneur {
-  id: ID!
-  name: String!
-  email: String!
-  profileImage: String
-  businesses: [Business!]!
-}
+#   businessName: String!
+#   businessId: ID!
+#   businessNumber: String!
 
-type Query {
-  entrepreneur(id: ID!): Entrepreneur
-  entrepreneurs: [Entrepreneur!]!
-}
+#   clientName: String!
+#   clientId: ID!
+#   clientNumber: String!
+#   clientEmail: String!
 
-type Mutation {
-  createEntrepreneur(
-    name: String!
-    email: String!
-    password: String!
-    profileImage: String
-  ): Entrepreneur!
-}
+#   date: String!
+#   time: String!
+#   ): Appointment
+# }
 
-type Subscription {
-  appointmentScheduled(customerId: ID!): Appointment
-}
+# # SUBSCRIPTIONS
+# # Will be added later when needed
+
+# # ENUMS
+# # enum genders {
+# #   male
+# #   female
+# #   other
+# # }

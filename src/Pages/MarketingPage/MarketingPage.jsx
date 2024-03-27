@@ -9,7 +9,7 @@ import "./style.css";
 export const MarketingPage = () => {
   return (
     <div className="marketing-page">
-      <NavBarHeader className="nav-bar-header-2" />
+      {/* <NavBarHeader className="nav-bar-header-2" /> */}
       <HeroLayout className="hero-layout-1" eyebrowClassName="hero-layout-instance" mode="light" />
       <Features
         className="features-x"
