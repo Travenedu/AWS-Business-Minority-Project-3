@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Entrepreneur.css";
 
 export const CompanyXPage = () => {
+    const navigate = useNavigate();
     const [showForm, setShowForm] = useState(false);
     const [mediaItems, setMediaItems] = useState([]);
     const [mediaUrl, setMediaUrl] = useState("");
@@ -15,15 +17,15 @@ export const CompanyXPage = () => {
         }
     };
 
+    const handleAuthentication = () => {
+        navigate("/authentication");
+    };
+
     return (
         <div className="company-x-page">
             <div className="div">
                 <div className="overlap">
-                    <div className="text-wrapper">Company X</div>
-                    <div className="button-container">
-                        <button className="reviews-button">Reviews</button>
-                        <button className="add-media-button" onClick={() => setShowForm(true)}>Add Media</button>
-                    </div>
+                    <div className="company-name">Company X</div>
                 </div>
                 <div className="media" />
                 <div className="media-2" />
@@ -33,24 +35,14 @@ export const CompanyXPage = () => {
                 <div className="media-6" />
                 <div className="media-7" />
                 <div className="media-8" />
-                <div className="overlap-group">
-                    <div className="text-wrapper-2">Reviews</div>
-                </div>
-                <div className="div-wrapper">
-                    <div className="text-wrapper-3">Add Media</div>
-                </div>
+                <button className="add-media-button" onClick={() => setShowForm(true)}>Add Media</button>
+                <button className="reviews">Reviews</button>
                 <div className="overlap-group-2">
-                    <div className="log-in" />
-                    <div className="sign-up" />
+                    <button className="log-in" onClick={handleAuthentication}>Log In</button>
+                    <button className="sign-up" onClick={handleAuthentication}>Sign Up</button>
                     <img className="logo" alt="Logo" src="https://cdn.animaapp.com/projects/65b1c27c58133fdd7aa24185/releases/65cfd0fd8d67bc924f7ecd56/img/logo.svg" />
-                    <div className="overlap-2">
-                        <div className="div-2" />
-                        <div className="text-wrapper-4">Explore</div>
-                    </div>
-                    <div className="overlap-3">
-                        <div className="div-2" />
-                        <div className="text-wrapper-5">Categories</div>
-                    </div>
+                    <button className="explore-button">Explore</button>
+                    <button className="categories-button">Categories</button>
                 </div>
                 <div className="overlap-4">
                     <img className="search-bar" alt="Search bar" src="https://cdn.animaapp.com/projects/65b1c27c58133fdd7aa24185/releases/65cfd0fd8d67bc924f7ecd56/img/search-bar-.svg" />
@@ -61,7 +53,7 @@ export const CompanyXPage = () => {
                 </div>
             </div>
             {showForm && (
-                <div className="form-container">
+                <div className="add-media-form">
                     <h2>Add Media</h2>
                     <input
                         type="text"
