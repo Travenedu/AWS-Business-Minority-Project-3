@@ -6,14 +6,23 @@ export const CompanyXPage = () => {
     const navigate = useNavigate();
     const [showForm, setShowForm] = useState(false);
     const [mediaItems, setMediaItems] = useState([]);
-    const [mediaUrl, setMediaUrl] = useState("");
+    const [mediaFile, setMediaFile] = useState(null);
     const [mediaTitle, setMediaTitle] = useState("");
 
     const handleAddMedia = () => {
-        if (mediaUrl && mediaTitle) {
-            setMediaItems([...mediaItems, { imageUrl: mediaUrl, title: mediaTitle }]);
-            setMediaUrl("");
+        if (mediaFile && mediaTitle) {
+            setMediaItems([...mediaItems, { imageUrl: URL.createObjectURL(mediaFile), title: mediaTitle }]);
+            setMediaFile(null);
             setMediaTitle("");
+        } else {
+            alert("Please select a media file and enter a title.");
+        }
+    };
+
+    const handleMediaFileChange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            setMediaFile(file);
         }
     };
 
@@ -56,10 +65,9 @@ export const CompanyXPage = () => {
                 <div className="add-media-form">
                     <h2>Add Media</h2>
                     <input
-                        type="text"
-                        placeholder="Media URL"
-                        value={mediaUrl}
-                        onChange={(e) => setMediaUrl(e.target.value)}
+                        type="file"
+                        accept="image/*, video/*"
+                        onChange={handleMediaFileChange}
                     />
                     <input
                         type="text"
