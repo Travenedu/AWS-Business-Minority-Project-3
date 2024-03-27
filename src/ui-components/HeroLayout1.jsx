@@ -16,6 +16,7 @@ export default function HeroLayout1(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
+      variantValues: { mode: "Light" },
       overrides: {
         Eyebrow: {},
         Heading: {},
@@ -26,9 +27,9 @@ export default function HeroLayout1(props) {
         Left: {},
         HeroLayout1: {},
       },
-      variantValues: { mode: "Light" },
     },
     {
+      variantValues: { mode: "Dark" },
       overrides: {
         Eyebrow: { color: "rgba(245,188,188,1)", children: "Business Owner" },
         Heading: {
@@ -46,7 +47,6 @@ export default function HeroLayout1(props) {
         Left: { backgroundColor: "rgba(13,26,38,1)" },
         HeroLayout1: {},
       },
-      variantValues: { mode: "Dark" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(

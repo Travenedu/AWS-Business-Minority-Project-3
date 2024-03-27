@@ -77,6 +77,8 @@ const App = ({ signOut }) => {
   return (
     <View className="App">
       <Heading level={1}>My Notes App</Heading>
+
+
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
@@ -100,6 +102,8 @@ const App = ({ signOut }) => {
           </Button>
         </Flex>
       </View>
+
+
       <Heading level={2}>Current Notes</Heading>
       <View margin="3rem 0">
         {notes.map((note) => (
@@ -125,3 +129,85 @@ const App = ({ signOut }) => {
 };
 
 export default withAuthenticator(App);
+
+
+{/* <form onSubmit={handleSubmit}>
+<div>
+  <label htmlFor="name">Business Name:</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    value={businessInfo.name}
+    onChange={handleChange}
+    required
+  />
+</div>
+<div>
+  <label htmlFor="phone">Business Phone Number:</label>
+  <input
+    type="text"
+    id="phone"
+    name="phone"
+    value={businessInfo.phone}
+    onChange={handleChange}
+    required
+  />
+</div>
+<div>-
+  <label htmlFor="address">Address:</label>
+  <input
+    type="text"
+    id="address"
+    name="address"
+    value={businessInfo.address}
+    onChange={handleChange}
+    required
+  />
+</div>
+<div>
+  <label htmlFor="website">Website:</label>
+  <input
+    type="text"
+    id="website"
+    name="website"
+    value={businessInfo.website}
+    onChange={handleChange}
+    required
+  />
+</div>
+<div>
+  <label htmlFor="category">Category:</label>
+  <input
+    type="text"
+    id="category"
+    name="category"
+    value={businessInfo.category}
+    onChange={handleChange}
+    required
+  />
+</div>
+<div>
+  <label htmlFor="description">Description:</label>
+  <textarea
+    id="description"
+    name="description"
+    value={businessInfo.description}
+    onChange={handleChange}
+    required
+  />
+</div>
+
+<div>
+  <label htmlFor="businessImagePath">Business Image:</label>
+  <input
+    type="file"
+    id="businessImagePath"
+    name="businessImagePath"
+    accept="businessImagePath/*"
+    onChange={handleImageChange}
+    required
+  />
+</div>
+<button type="submit">Create Business</button>
+</form> */}

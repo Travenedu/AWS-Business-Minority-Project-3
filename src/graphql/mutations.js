@@ -3,140 +3,102 @@
 
 export const createBusiness = /* GraphQL */ `
   mutation CreateBusiness(
-    $name: String!
-    $description: String
-    $address: String!
-    $phone: String!
-    $website: String
+    $input: CreateBusinessInput!
+    $condition: ModelBusinessConditionInput
   ) {
-    createBusiness(
-      name: $name
-      description: $description
-      address: $address
-      phone: $phone
-      website: $website
-    ) {
+    createBusiness(input: $input, condition: $condition) {
       id
       name
-      description
-      address
       phone
+      email
+      address
       website
       category
-      price
+      description
+      businessImagePath
       appointments {
-        id
+        appointmentId
+        businessName
+        businessId
+        businessNumber
         clientName
+        clientId
+        clientNumber
         clientEmail
         date
         time
         __typename
       }
+      createdAt
+      updatedAt
       __typename
     }
   }
 `;
-export const createAppointment = /* GraphQL */ `
-  mutation CreateAppointment(
-    $customerId: ID!
-    $businessId: ID!
-    $clientName: String!
-    $clientEmail: String!
-    $date: String!
-    $time: String!
+export const updateBusiness = /* GraphQL */ `
+  mutation UpdateBusiness(
+    $input: UpdateBusinessInput!
+    $condition: ModelBusinessConditionInput
   ) {
-    createAppointment(
-      customerId: $customerId
-      businessId: $businessId
-      clientName: $clientName
-      clientEmail: $clientEmail
-      date: $date
-      time: $time
-    ) {
+    updateBusiness(input: $input, condition: $condition) {
       id
-      business {
-        id
-        name
-        description
-        address
-        phone
-        website
-        category
-        price
+      name
+      phone
+      email
+      address
+      website
+      category
+      description
+      businessImagePath
+      appointments {
+        appointmentId
+        businessName
+        businessId
+        businessNumber
+        clientName
+        clientId
+        clientNumber
+        clientEmail
+        date
+        time
         __typename
       }
-      clientName
-      clientEmail
-      date
-      time
+      createdAt
+      updatedAt
       __typename
     }
   }
 `;
-export const createCustomer = /* GraphQL */ `
-  mutation CreateCustomer(
-    $name: String!
-    $email: String!
-    $password: String!
-    $profileImage: String
+export const deleteBusiness = /* GraphQL */ `
+  mutation DeleteBusiness(
+    $input: DeleteBusinessInput!
+    $condition: ModelBusinessConditionInput
   ) {
-    createCustomer(
-      name: $name
-      email: $email
-      password: $password
-      profileImage: $profileImage
-    ) {
+    deleteBusiness(input: $input, condition: $condition) {
       id
       name
+      phone
       email
-      profileImage
-      __typename
-    }
-  }
-`;
-export const updateCustomerProfile = /* GraphQL */ `
-  mutation UpdateCustomerProfile(
-    $id: ID!
-    $name: String
-    $email: String
-    $profileImage: String
-  ) {
-    updateCustomerProfile(
-      id: $id
-      name: $name
-      email: $email
-      profileImage: $profileImage
-    ) {
-      id
-      name
-      email
-      profileImage
-      __typename
-    }
-  }
-`;
-export const saveBusiness = /* GraphQL */ `
-  mutation SaveBusiness($customerId: ID!, $businessId: ID!) {
-    saveBusiness(customerId: $customerId, businessId: $businessId)
-  }
-`;
-export const createEntrepreneur = /* GraphQL */ `
-  mutation CreateEntrepreneur(
-    $name: String!
-    $email: String!
-    $password: String!
-    $profileImage: String
-  ) {
-    createEntrepreneur(
-      name: $name
-      email: $email
-      password: $password
-      profileImage: $profileImage
-    ) {
-      id
-      name
-      email
-      profileImage
+      address
+      website
+      category
+      description
+      businessImagePath
+      appointments {
+        appointmentId
+        businessName
+        businessId
+        businessNumber
+        clientName
+        clientId
+        clientNumber
+        clientEmail
+        date
+        time
+        __typename
+      }
+      createdAt
+      updatedAt
       __typename
     }
   }

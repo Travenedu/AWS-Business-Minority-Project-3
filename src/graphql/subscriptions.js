@@ -1,25 +1,95 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const appointmentScheduled = /* GraphQL */ `
-  subscription AppointmentScheduled($customerId: ID!) {
-    appointmentScheduled(customerId: $customerId) {
+export const onCreateBusiness = /* GraphQL */ `
+  subscription OnCreateBusiness($filter: ModelSubscriptionBusinessFilterInput) {
+    onCreateBusiness(filter: $filter) {
       id
-      business {
-        id
-        name
-        description
-        address
-        phone
-        website
-        category
-        price
+      name
+      phone
+      email
+      address
+      website
+      category
+      description
+      businessImagePath
+      appointments {
+        appointmentId
+        businessName
+        businessId
+        businessNumber
+        clientName
+        clientId
+        clientNumber
+        clientEmail
+        date
+        time
         __typename
       }
-      clientName
-      clientEmail
-      date
-      time
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateBusiness = /* GraphQL */ `
+  subscription OnUpdateBusiness($filter: ModelSubscriptionBusinessFilterInput) {
+    onUpdateBusiness(filter: $filter) {
+      id
+      name
+      phone
+      email
+      address
+      website
+      category
+      description
+      businessImagePath
+      appointments {
+        appointmentId
+        businessName
+        businessId
+        businessNumber
+        clientName
+        clientId
+        clientNumber
+        clientEmail
+        date
+        time
+        __typename
+      }
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteBusiness = /* GraphQL */ `
+  subscription OnDeleteBusiness($filter: ModelSubscriptionBusinessFilterInput) {
+    onDeleteBusiness(filter: $filter) {
+      id
+      name
+      phone
+      email
+      address
+      website
+      category
+      description
+      businessImagePath
+      appointments {
+        appointmentId
+        businessName
+        businessId
+        businessNumber
+        clientName
+        clientId
+        clientNumber
+        clientEmail
+        date
+        time
+        __typename
+      }
+      createdAt
+      updatedAt
       __typename
     }
   }

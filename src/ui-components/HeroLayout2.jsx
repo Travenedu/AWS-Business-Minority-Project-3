@@ -16,6 +16,7 @@ export default function HeroLayout2(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
+      variantValues: { colorMode: "Default" },
       overrides: {
         "Full stack": {},
         "Build full-stack web and mobile apps in hours. Easy to start, easy to scale":
@@ -27,9 +28,9 @@ export default function HeroLayout2(props) {
         "Type Lock Up": {},
         HeroLayout2: {},
       },
-      variantValues: { colorMode: "Default" },
     },
     {
+      variantValues: { colorMode: "dark" },
       overrides: {
         "Full stack": { color: "rgba(249,184,249,1)" },
         "Build full-stack web and mobile apps in hours. Easy to start, easy to scale":
@@ -41,7 +42,6 @@ export default function HeroLayout2(props) {
         "Type Lock Up": {},
         HeroLayout2: { backgroundColor: "rgba(0,64,77,1)" },
       },
-      variantValues: { colorMode: "dark" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(

@@ -16,6 +16,7 @@ export default function LogoWithText(props) {
   const { overrides: overridesProp, ...rest } = props;
   const variants = [
     {
+      variantValues: { color: "neutral" },
       overrides: {
         Union: {},
         Vector39193044: {},
@@ -23,9 +24,9 @@ export default function LogoWithText(props) {
         logo: {},
         LogoWithText: {},
       },
-      variantValues: { color: "neutral" },
     },
     {
+      variantValues: { color: "brand" },
       overrides: {
         Union: {
           paths: [
@@ -97,7 +98,6 @@ export default function LogoWithText(props) {
         logo: {},
         LogoWithText: {},
       },
-      variantValues: { color: "brand" },
     },
   ];
   const overrides = mergeVariantsAndOverrides(

@@ -6,7 +6,10 @@ import Authentication from './Pages/Authentication/Authentication';
 import CompanyXPage from './Pages/Entrepreneur/Entrepreneur';
 import { LeaveAReview } from './Pages/LeaveAReview/LeaveAReview';
 import { MarketingPage } from './Pages/MarketingPage';
+import BusinessView from './Pages/BusinessView/BusinessView';
+import CreateBusiness from './Pages/CreateBusiness/CreateBusiness';
 import './App.css'; // Import the CSS file
+
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
             <Route path="/authentication" element={<Authentication />} />
             <Route path="/entrepreneur" element={<CompanyXPage />} />
             <Route path="/LeaveAReview" element={<LeaveAReview/>}/>
-            <Route path="/MarketingPage" element={<MarketingPage/>}/>
+            <Route path="/marketingpage" element={<MarketingPage/>}/>
+            <Route path="/businessview" element={<BusinessView/>}/>
+            <Route path="/createbusiness" element={<CreateBusiness/>}/>
           </Routes>
         </main>
       </div>

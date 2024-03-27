@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "howardpreneurnetwork",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-03-12T22:05:32.491Z"
 }

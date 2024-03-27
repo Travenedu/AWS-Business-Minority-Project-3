@@ -1,92 +1,59 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const business = /* GraphQL */ `
-  query Business($id: ID!) {
-    business(id: $id) {
+export const getBusiness = /* GraphQL */ `
+  query GetBusiness($id: ID!) {
+    getBusiness(id: $id) {
       id
       name
-      description
-      address
       phone
+      email
+      address
       website
       category
-      price
+      description
+      businessImagePath
       appointments {
-        id
+        appointmentId
+        businessName
+        businessId
+        businessNumber
         clientName
+        clientId
+        clientNumber
         clientEmail
         date
         time
         __typename
       }
+      createdAt
+      updatedAt
       __typename
     }
   }
 `;
-export const businesses = /* GraphQL */ `
-  query Businesses($category: String, $sortBy: SortBy) {
-    businesses(category: $category, sortBy: $sortBy) {
-      id
-      name
-      description
-      address
-      phone
-      website
-      category
-      price
-      appointments {
+export const listBusinesses = /* GraphQL */ `
+  query ListBusinesses(
+    $filter: ModelBusinessFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listBusinesses(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
         id
-        clientName
-        clientEmail
-        date
-        time
+        name
+        phone
+        email
+        address
+        website
+        category
+        description
+        businessImagePath
+        createdAt
+        updatedAt
         __typename
       }
-      __typename
-    }
-  }
-`;
-export const customer = /* GraphQL */ `
-  query Customer($id: ID!) {
-    customer(id: $id) {
-      id
-      name
-      email
-      profileImage
-      __typename
-    }
-  }
-`;
-export const customers = /* GraphQL */ `
-  query Customers {
-    customers {
-      id
-      name
-      email
-      profileImage
-      __typename
-    }
-  }
-`;
-export const entrepreneur = /* GraphQL */ `
-  query Entrepreneur($id: ID!) {
-    entrepreneur(id: $id) {
-      id
-      name
-      email
-      profileImage
-      __typename
-    }
-  }
-`;
-export const entrepreneurs = /* GraphQL */ `
-  query Entrepreneurs {
-    entrepreneurs {
-      id
-      name
-      email
-      profileImage
+      nextToken
       __typename
     }
   }

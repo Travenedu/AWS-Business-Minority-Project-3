@@ -1,4 +1,3 @@
-
 # TYPES
 type Profile {
   id: ID!
@@ -8,94 +7,118 @@ type Profile {
   birthday: Int
   gender: String!
   business_owner: Boolean!
-
 }
 
-type CustomerProfile{
+type CustomerProfile {
   id: ID!
   profile: Profile!
+  appointments: [Appointment]
 }
 
 type BusinessOwnerProfile {
   id: ID!
   profile: Profile!
   business: Business!
+  appointments: [Appointment]
 }
 
-type Business {
+type Business @model{
   id: ID!
   name: String!
   phone: String!
+  email: String!
+  address: String!
+  website: String!
+  category: String!
+  description: String!
+  businessImagePath: String!
   appointments: [Appointment]
-  business_type: String # change this when different business types are figured out 
+  
 }
 
 type Appointment {
-  id: ID!
+  appointmentId: ID!
+
+  businessName: String!
+  businessId: ID!
+  businessNumber: String!
+
   clientName: String!
+  clientId: ID!
+  clientNumber: String!
   clientEmail: String!
+
   date: String!
   time: String!
 }
-   
+
 # Authentification
-type Note @model @auth(rules: [ { allow: public } ] ){
+type Note @model @auth(rules: [{ allow: public }]) {
   id: ID!
   name: String!
   description: String
   image: String
 }
 
+# # INPUTS
+# input profileInput {
+#   first_name: String!
+#   last_name: String!
+#   email: String!
+#   birthday: Int
+#   business_owner: Boolean!
+# }
 
-#INPUTS // adding these at the end
-input profileInput {
-  id: ID!
-  first_name: String!
-  last_name: String!
-  email: String!
-  birthday: Int
-  business_owner: Boolean! 
-}
+# # QUERIES
+# type Query {
+#   profiles: [Profile]
+#   userProfile(id: ID!): Profile
+#   userCustomerProfile(id: ID): CustomerProfile
+#   userBusinessOwnerProfile(id: ID): BusinessOwnerProfile
 
-
-# QUERIES
-type Query {
-  Profile: [Profile]
-  userProfile(id: ID!): Profile
-}
-
+# }
 
 # MUTATIONS
-type Mutation { # Needs to mimic Profile type
-  createProfile(id: ID!
-    first_name: String!
-    last_name: String!
-    email: String!
-    birthday: Int
-    gender: String!
-    business_owner: Boolean! ): Profile
+# type Mutation {
+#   createProfile(
+#     first_name: String!
+#     last_name: String!
+#     email: String!
+#     birthday: Int
+#     gender: String!
+#     business_owner: Boolean!
+#   ): Profile
 
-  createBusiness( id: ID!
-  name: String!
-  phone: String!
-  appointments: [Appointment]
-  business_type: String ): Business
+#   # createBusiness(
+#   #   name: String!
+#   #   phone: String!
+#   #   appointments: [Appointment]
+#   #   business_type: String
+#   # ): Business
 
-  createAppointment( id: ID!
-  clientName: String!
-  clientEmail: String!
-  date: String!
-  time: String!): Appointment
+#   createAppointment(
+#   appointmentId: ID!
 
-}
+#   businessName: String!
+#   businessId: ID!
+#   businessNumber: String!
 
-# SUBSCRIPTIONS 
-# Will be added later when needed
+#   clientName: String!
+#   clientId: ID!
+#   clientNumber: String!
+#   clientEmail: String!
 
-# ENUMS
-
-# enum genders {
-#   male
-#   female
-#   other
+#   date: String!
+#   time: String!
+#   ): Appointment
 # }
+
+# # SUBSCRIPTIONS
+# # Will be added later when needed
+
+# # ENUMS
+# # enum genders {
+# #   male
+# #   female
+# #   other
+# # }
